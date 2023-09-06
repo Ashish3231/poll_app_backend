@@ -7,9 +7,9 @@ module.exports = function (app) {
     next()
   })
 
-  app.post('/api/poll/create', [authJwt.verifyToken], controller.createQuestion)
+  app.post('/api/poll/create', [authJwt.verifyToken], controller.createPoll)
 
-  app.get('/api/poll/:id', [authJwt.verifyToken], controller.viewQuestion)
+  app.get('/api/poll/:id', [authJwt.verifyToken], controller.viewPoll)
 
   app.get('/api/poll', [authJwt.verifyToken], controller.findAllPoll)
 
