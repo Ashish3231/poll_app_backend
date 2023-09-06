@@ -18,3 +18,5 @@ to run the project
 1. User Login and Registration with JWT Authentication
 2. CORS, Authentication & Authorization middlewares & Sequelize
 
+### postman collection 
+postman collection in Poll_App.postman_collection.json 
