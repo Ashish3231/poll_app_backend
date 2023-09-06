@@ -12,5 +12,9 @@ to run the project
 ### "step to run api"
 1. run singup api to create user
 2. run signin api to for signin
-otherwise "no token provided" response from apis
+
+
+### Login and Registration with JWT
+1. User Login and Registration with JWT Authentication
+2. CORS, Authentication & Authorization middlewares & Sequelize
 
