@@ -5,7 +5,7 @@ const PollOption = db.polls_option
 const Sequelize = require('sequelize')
 
 // To create a Poll and option
-exports.createQuestion = async (req, res) => {
+exports.createPoll = async (req, res) => {
   try {
     const { title } = req.body
     // console.log('user________id: ', req.userId)
@@ -44,7 +44,7 @@ exports.createQuestion = async (req, res) => {
 }
 
 // To view a Poll and it's options
-exports.viewQuestion = async (req, res) => {
+exports.viewPoll = async (req, res) => {
   try {
     const pollId = req.params.id
     const poll = await Poll.findAll({
