@@ -11,7 +11,7 @@ to run the project
 
 ### "step to run api"
 1. run singup api to create user
-2. run signin api to for signin
+2. run signin api for signin
 
 
 ### Login and Registration with JWT
@@ -19,4 +19,4 @@ to run the project
 2. CORS, Authentication & Authorization middlewares & Sequelize
 
 ### postman collection 
-postman collection in Poll_App.postman_collection.json 
+for postman collection download Poll_App.postman_collection.json 
