@@ -114,12 +114,11 @@ exports.findAllPoll = async (req, res) => {
 // To increase the count of votes
 exports.addVote = async (req, res) => {
   try {
-    let pollId = req.body.poll_id
-    let optionId = req.body.option_id
-    console.log('jkhasdksdfkjsahd', pollId + '      ' + optionId)
+    const pollId = req.body.poll_id
+    const optionId = req.body.option_id
 
-    let increase = 1
-    let updatedOn = new Date()
+    const increase = 1
+    const updatedOn = new Date()
     const pollOption = await PollOption.update(
       {
         votes: Sequelize.literal(`votes + ${increase}`),
@@ -127,8 +126,8 @@ exports.addVote = async (req, res) => {
       },
       {
         where: {
-          poll_id: req.body.poll_id,
-          id: req.body.option_id
+          poll_id: pollId,
+          id: optionId
         }
       }
     )
